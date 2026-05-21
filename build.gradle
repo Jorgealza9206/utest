@@ -1,0 +1,14 @@
+dependencies {
+    // Librerías base de Serenity BDD
+    testImplementation 'net.serenity-bdd:serenity-core:3.9.8'
+    testImplementation 'net.serenity-bdd:serenity-junit:3.9.8'
+
+    // El "traductor" entre Serenity y Cucumber
+    testImplementation 'net.serenity-bdd:serenity-cucumber:3.9.8'
+
+    // Librería para hacer aserciones (validaciones) más legibles
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+
+    // (Opcional pero recomendado) Para ver logs en consola
+    testImplementation 'org.slf4j:slf4j-simple:2.0.9'
+}

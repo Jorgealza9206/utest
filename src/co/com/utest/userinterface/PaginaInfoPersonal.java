@@ -1,5 +1,8 @@
 package co.com.utest.userinterface;
 
+import net.serenitybdd.screenplay.targets.Target;
+import org.openqa.selenium.By;
+
 public class PaginaInfoPersonal {
 
     public static final Target PRIMER_NOMBRE = Target.the("Primer nombre")

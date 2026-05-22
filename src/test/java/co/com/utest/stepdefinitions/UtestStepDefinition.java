@@ -1,5 +1,6 @@
 package co.com.utest.stepdefinitions;
 
+import co.com.utest.tasks.Llenar;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Thne;
@@ -18,9 +19,8 @@ public class UtestStepDefinitions {
     }
 
     @When("^El usuario ingresa los datos requeridos por el sistema$")
-    public void elUsuarioIngresaLosDatosRequeridosPorElSistema() throws Excpetion {
-        //Write here
-        throw new PendingExection();
+    public void elUsuarioIngresaLosDatosRequeridosPorElSistema(List<UtestDatos> datos) throws Excpetion {
+        OnStage.theActorInTheSpotLight(Llenar.laPagina(datos));
     }
 
     @Then("^El registro se completa al ver el botón de Complete Setup$")

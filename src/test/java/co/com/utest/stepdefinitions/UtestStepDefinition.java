@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 public class UtestStepDefinitions {
 
     @Before
-    public void setStgae(){
+    public void setStage(){
         OnStage.setTheStage(new OnlineCast()); //Con esto se crea el escenario
     }
 
